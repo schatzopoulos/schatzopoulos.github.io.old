@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Serafeim Chatzopoulos</title>
+    <description>Serafeim Chatzopoulos Personalal Website</description>
+    <link>https://schatzopoulos.github.io/</link>
+    <atom:link href="https://schatzopoulos.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 09 Jun 2019 23:08:47 +0300</pubDate>
+    <lastBuildDate>Sun, 09 Jun 2019 23:08:47 +0300</lastBuildDate>
+    <generator>Jekyll v3.6.3</generator>
+    
+      <item>
+        <title>DIANA-TarBase v8: a decade-long collection of experimentally supported miRNA-gene interactions</title>
+        <description>&lt;p&gt;DIANA-TarBase v8 (http://www.microrna.gr/tarbase) is a reference database devoted to the indexing of experimentally supported microRNA (miRNA) targets. Its eighth version is the first database indexing &amp;gt;1 million entries, corresponding to ∼670 000 unique miRNA-target pairs. The interactions are supported by &amp;gt;33 experimental methodologies, applied to ∼600 cell types/tissues under ∼451 experimental conditions. It integrates information on cell-type specific miRNA–gene regulation, while hundreds of thousands of miRNA-binding locations are reported. TarBase is coming of age, with more than a decade of continuous support in the non-coding RNA field. A new module has been implemented that enables the browsing of interactions through different filtering combinations. It permits easy retrieval of positive and negative miRNA targets per species, methodology, cell type and tissue. An incorporated ranking system is utilized for the display of interactions based on the robustness of their supporting methodologies. Statistics, pie-charts and interactive bar-plots depicting the database content are available through a dedicated result page. An intuitive interface is introduced, providing a user-friendly application with flexible options to different queries.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>https://schatzopoulos.github.io/blog/2017/tarbasev8/</link>
+        <guid isPermaLink="true">https://schatzopoulos.github.io/blog/2017/tarbasev8/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>DIANA-mirExTra v2.0: Uncovering microRNAs and transcription factors with crucial roles in NGS expression data</title>
+        <description>&lt;p&gt;Differential expression analysis (DEA) is one of the main instruments utilized for revealing molecular mechanisms in pathological and physiological conditions. DIANA-mirExTra v2.0 (http://www.microrna.gr/mirextrav2) performs a combined DEA of mRNAs and microRNAs (miRNAs) to uncover miRNAs and transcription factors (TFs) playing important regulatory roles between two investigated states. The web server uses as input miRNA/RNA-Seq read count data sets that can be uploaded for analysis. Users can combine their data with 350 small-RNA-Seq and 65 RNA-Seq in-house analyzed libraries which are provided by DIANA-mirExTra v2.0.&lt;/p&gt;
+
+&lt;p&gt;The web server utilizes miRNA:mRNA, TF:mRNA and TF:miRNA interactions derived from extensive experimental data sets. More than 450 000 miRNA interactions and 2 000 000 TF binding sites from specific or high-throughput techniques have been incorporated, while accurate miRNA TSS annotation is obtained from microTSS experimental/in silico framework. These comprehensive data sets enable users to perform analyses based solely on experimentally supported information and to uncover central regulators within sequencing data: miRNAs controlling mRNAs and TFs regulating mRNA or miRNA expression. The server also supports predicted miRNA:gene interactions from DIANA-microT-CDS for 4 species (human, mouse, nematode and fruit fly). DIANA-mirExTra v2.0 has an intuitive user interface and is freely available to all users without any login requirement.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 May 2016 00:00:00 +0300</pubDate>
+        <link>https://schatzopoulos.github.io/blog/2016/mirextra/</link>
+        <guid isPermaLink="true">https://schatzopoulos.github.io/blog/2016/mirextra/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>A Software-Based Self-Test methodology for on-line testing of data TLBs</title>
+        <description>&lt;p&gt;For small memory arrays that usually lack Memory Built-In Self-Test (MBIST), such as Translation Lookaside Buffer (TLB) arrays, Software-Based Self-Test (SBST) can be a flexible and low-cost solution for on-line March test application. In this paper, an SBST program development methodology is proposed for on-line testing of data TLB (D-TLB), both for data (SRAM) and tag (CAM) memory arrays. The SBST methodology exploits existing special purpose instructions that modern ISAs implement to access the TLBs for debug-diagnostic purposes, termed hereafter Direct TLB Access (DTA) instructions, as well as, the trap handler mechanism.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 May 2012 00:00:00 +0300</pubDate>
+        <link>https://schatzopoulos.github.io/blog/2012/ets/</link>
+        <guid isPermaLink="true">https://schatzopoulos.github.io/blog/2012/ets/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>On-Line Software-Based Self-Test for Data TLBs</title>
+        <description>&lt;p&gt;In this paper, an SBST program development methodology is proposed for on-line testing of data TLB
+(D-TLB), both for data (SRAM) and tag (CAM) memory arrays. The proposed SBST methodology exploits
+existing special purpose instructions that modern Instruction Set Architectures (ISAs) implement to access the TLBs for debug-diagnostic purposes, termed hereafter Direct TLB Access (DTA) instructions, as well as, the trap handler mechanism to overcome testability challenges. Experimental results on the D-TLB arrays of OpenSPARC T1 show a significant improvement of test time (on average 40%) when such debug-diagnostic instructions are exploited.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 May 2012 00:00:00 +0300</pubDate>
+        <link>https://schatzopoulos.github.io/blog/2012/median/</link>
+        <guid isPermaLink="true">https://schatzopoulos.github.io/blog/2012/median/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
