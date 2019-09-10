@@ -633,8 +633,11 @@ small {
 }
 
 a {
-    color: #337ab7;
     text-decoration: none
+}
+
+.container a {
+    color: #337ab7;
 }
 
 a:active,
@@ -1460,12 +1463,12 @@ body {
 }
 
 body {
-    border-top: 5px solid #337ab7;
+    /*border-top: 5px solid #337ab7;*/
     background: #fff;
-    padding-top: 75px
+    /*padding-top: 75px*/
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     body {
         padding-top: 0
     }
@@ -1489,9 +1492,14 @@ figure {
     padding-right: 1.5em
 }
 
-@media screen and (min-width: 768px) {
+.content {
+        border-top: 5px solid #337ab7;
+
+}
+
+@media screen and (min-width: 1200px) {
     .container {
-        max-width: 768px
+        max-width: 1200px
     }
 }
 
@@ -1515,7 +1523,7 @@ figure {
     z-index: 1000
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .site-header {
         position: relative;
         top: auto;
@@ -1558,7 +1566,7 @@ figure {
     z-index: 100
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .logo {
         padding: 5px 0;
         position: relative;
@@ -1641,7 +1649,7 @@ figure {
     width: 100%
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .navbar {
         text-align: left;
         background-color: transparent;
@@ -1695,7 +1703,7 @@ figure {
     display: none
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .toggle-navbar-button {
         display: none
     }
@@ -1806,7 +1814,7 @@ figure {
     border-radius: 6px
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .post-thumbnail {
         float: left;
         max-width: 250px;
@@ -1841,7 +1849,7 @@ figure {
     color: #337ab7
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
 
     .post-list .post-content,
     .post-list .post-thumbnail {
@@ -1855,7 +1863,7 @@ figure {
     padding: 0
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .post-list .post-thumbnail {
         width: 250px;
         margin: 0
@@ -1873,7 +1881,7 @@ figure {
     background-size: cover
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .post-list .post-content {
         padding: 0 0 0 1.5em
     }
@@ -1947,7 +1955,7 @@ figure {
     animation: octocat-wave 560ms ease-in-out
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .github-corner {
         display: block
     }
@@ -2266,4 +2274,72 @@ figure {
 
 li {
   margin-top: 15px;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  /*padding: 5px;*/
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 15%;
+  background-color: #337ab7;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  color: #E5E5E5;
+}
+
+.sidebar a {
+    color: #E5E5E5;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar links */
+/*.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}*/
+
+/* Active/current link */
+/*.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}*/
+
+/* Links on mouse-over */
+/*.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}*/
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    /*width: 100%;*/
+    height: auto;
+    position: relative;
+  }
+  /*.sidebar a {float: left;}*/
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
