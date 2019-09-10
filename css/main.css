@@ -2258,3 +2258,8 @@ figure {
 .blue {
 	color: #337ab7;
 }
+
+.links {
+    color: #337ab7;
+    font-size: 0.6em; 
+}
