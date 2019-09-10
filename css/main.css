@@ -2263,3 +2263,7 @@ figure {
     color: #337ab7;
     font-size: 0.9em; 
 }
+
+li {
+  margin-top: 5px;
+}
