@@ -1900,11 +1900,6 @@ figure {
     color: #9a9a9a
 }
 
-.social a:hover,
-.social a:active,
-.social a:focus {
-    color: #337ab7
-}
 
 .social i {
     font-size: 1.6em
@@ -2297,6 +2292,14 @@ li {
 .sidebar a:hover {
     text-decoration: underline;
 }
+
+.social a:hover,
+.social a:active,
+.social a:focus {
+    color: white;
+    text-decoration: none;
+}
+
 
 /* Sidebar links */
 /*.sidebar a {
