@@ -1509,6 +1509,13 @@ figure {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: unset !important;
+	padding-left: unset !important
+    }
+}
+
 .site-header {
     background-color: #fff;
     padding: 0;
