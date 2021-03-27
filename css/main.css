@@ -3,7 +3,7 @@
  * https://github.com/nandomoreirame/end2end
  * MIT License
  */
-@import url("//fonts.googleapis.com/css?family=Montserrat:300,400,700");
+/*@import url("//fonts.googleapis.com/css?family=Montserrat:300,400,700");*/
 
 .clearfix::after,
 .site-header::after,
@@ -1787,24 +1787,24 @@ figure {
     font-weight: 700
 }
 
-.card,
+/*.card,
 .post-list .post {
     background-color: #fff;
     box-shadow: -1px 2px 6px 0 rgba(0, 0, 0, 0.1);
     padding: 1.5em;
     transition: box-shadow .3s ease-in-out;
     border-radius: 10px
-}
+}*/
 
 .card:not(:last-child),
 .post-list .post:not(:last-child) {
     margin: 0 0 1.5em
 }
 
-.card:hover,
+/*.card:hover,
 .post-list .post:hover {
     box-shadow: -1px 2px 12px 0 rgba(0, 0, 0, 0.2)
-}
+}*/
 
 .post {
     display: table
