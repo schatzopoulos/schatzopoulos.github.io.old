@@ -2330,7 +2330,7 @@ li {
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-  margin-left: 200px;
+  margin-left: 15%;
   padding: 1px 16px;
   height: 1000px;
 }
@@ -2352,4 +2352,9 @@ div.content {
     text-align: center;
     float: none;
   }
+}
+
+a.disabled {
+    pointer-events: none;
+    color: #ccc;
 }

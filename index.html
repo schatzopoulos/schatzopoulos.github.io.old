@@ -24,206 +24,207 @@
 
     ga('create', 'UA-83256088-1', 'auto');
     ga('send', 'pageview');
-  </script> -->
+</script> -->
 
-  <!-- add favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+<!-- add favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
   <div class="sidebar hero-inner">
-  <img src="images/profile.jpg" alt="author thumb" class="dot">
+      <img src="images/profile.jpg" alt="author thumb" class="dot">
       <h1>Hello!</h1>
       <h3>I'm <strong itemprop="name">Serafeim Chatzopoulos</strong>,
         <em itemprop="jobTitle"><a href="https://www.imsi.athenarc.gr/en" target="_blank">Research Assistant @ IMSI Athena RC</a></em> and 
         <em itemprop="jobTitle"><a href="http://soda.dit.uop.gr/" target="_blank">Phd Candidate @ DIT.UoP</a></em>
-      </h3>
-      <!-- <h3>Enthusiast performance, responsive design and usability, always looking for the best project and good coffee.</h3> -->
-    bibliometrics</br>graph databases</br>scientific databases</br>privacy preservation
+    </h3>
+    <!-- <h3>Enthusiast performance, responsive design and usability, always looking for the best project and good coffee.</h3> -->
+bibliometrics</br>graph databases</br>scientific databases</br>privacy preservation
 
-      <ul class="social">
-        <li><a href="mailto:schatz@imis.athena-innovation.gr" title="email"><i class="icon icon-mail2"></i></a></li>
-        <li><a href="https://github.com/schatzopoulos" target="_blank" title="GitHub"><i class="icon icon-github"></i></a></li>
-        <!-- <li><a href="" target="_blank"><i class="icon icon-twitter"></i></a></li> -->
-        <!-- <li><a href="" target="_blank"><i class="icon icon-facebook"></i></a></li> -->
-        <li><a href="https://scholar.google.gr/citations?user=JrlfaH8AAAAJ&hl=el" target="_blank" title="Google Scholar"><i class="icon icon-google3"></i></a></li>
-        <li><a href="https://linkedin.com/in/schatzopoulos" target="_blank" title="LinkedIn"><i class="icon icon-linkedin2"></i></a></li>
-      </ul>
+<ul class="social">
+    <li><a href="mailto:schatz@imis.athena-innovation.gr" title="email"><i class="icon icon-mail2"></i></a></li>
+    <li><a href="https://github.com/schatzopoulos" target="_blank" title="GitHub"><i class="icon icon-github"></i></a></li>
+    <!-- <li><a href="" target="_blank"><i class="icon icon-twitter"></i></a></li> -->
+    <!-- <li><a href="" target="_blank"><i class="icon icon-facebook"></i></a></li> -->
+    <li><a href="https://scholar.google.gr/citations?user=JrlfaH8AAAAJ&hl=el" target="_blank" title="Google Scholar"><i class="icon icon-google3"></i></a></li>
+    <li><a href="https://linkedin.com/in/schatzopoulos" target="_blank" title="LinkedIn"><i class="icon icon-linkedin2"></i></a></li>
+</ul>
 </div>
 
 <!-- Page content -->
 <div class="content">
-<section class="hero">
-  <div class="hero-inner">
-    <div class="container">
-      
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="container">
 
-      <!-- uncomment for buttons -->
-     <!--  <a href="/about" class="button button-ghost" title="about">bio</a>
-      <a href="/papers" class="button button-ghost" title="publications">publications</a> -->
+            <!-- uncomment for buttons -->
+            <!--  <a href="/about" class="button button-ghost" title="about">bio</a>
+            <a href="/papers" class="button button-ghost" title="publications">publications</a> -->
 
-      <h2 style="color:#337ab7;">Publications</h2>
+            <h2 style="color:#337ab7;">Publications</h2>
 
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">BIP! DB: A Dataset of Impact Measures for Scientific Publications</h5>
-            <h6 class="card-subtitle mb-2 text-muted">T. Vergoulis,  I. Kanellos, C. Atzori, A. Mannocci, <span class="blue">S. Chatzopoulos</span>, S. La Bruzzo, N. Manola, P. Manghi</h6>
-            <p class="card-text">1<sup>st</sup> International Workshop on Scientific Knowledge: Representation, Discovery and Assessment (Sci-K) @ The Web Conf, Ljubljana, Slovenia, April 2021</p>
-            <span style="font-size: 0.8em">
-              <a href="#" class="card-link"><i class="fas fa-file"></i> Article</a>
-              <a href="#" class="card-link"><i class="fas fa-play"></i> Video</a>
-              <a href="#" class="card-link"><i class="fas fa-file-powerpoint"></i> Slides</a>
-              <a href="#" class="card-link"><i class="fas fa-code"></i> Code</a>
-              <a href="#" class="card-link"><i class="fas fa-database"></i> Data</a>
-              <a href="#" class="card-link"><i class="fas fa-external-link-square-alt"></i> App</a>
-            </span>
-          </div>
-        </div>
+            {% for paper in site.data.papers %}
 
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ paper.title }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ paper.authors }}</h6>
+                        <p class="card-text">{{ paper.venue }}</p>
+                        <span style="font-size: 0.8em">
+                            <a href="{{ paper.link }}" class="card-link disabled"><i class="fas fa-file"></i> Article</a>
+                            <a href="#" class="card-link disabled"><i class="fas fa-play"></i> Video</a>
+                            <a href="#" class="card-link disabled"><i class="fas fa-file-powerpoint"></i> Slides</a>
+                            <a href="#" class="card-link disabled"><i class="fas fa-code"></i> Code</a>
+                            <a href="#" class="card-link disabled"><i class="fas fa-database"></i> Data</a>
+                            <a href="#" class="card-link disabled"><i class="fas fa-external-link-square-alt"></i> App</a>
+                        </span>
+                    </div>
+                </div>
+            {% endfor %}
 
-      <ul style="text-align: justify; list-style-type:none;">
-         <li>T. Vergoulis,  I. Kanellos, C. Atzori, A. Mannocci, <span class="blue">S. Chatzopoulos</span>, S. La Bruzzo, N. Manola, P. Manghi: <b>BIP! DB: A Dataset of Impact Measures for Scientific Publications.</b> 1<sup>st</sup> International Workshop on Scientific Knowledge: Representation, Discovery and Assessment (Sci-K) @ The Web Conf, Ljubljana, Slovenia, April 2021
-          <div class="links">
-<!--             Links:  -->
-<!--                 <a href="http://www.vldb.org/pvldb/vol13/p2913-chatzopoulos.pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a> -->
-<!--                 <a href="http://sphinx.magellan.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a> -->
-<!--               <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a> -->
-<!--               <a href="https://zenodo.org/record/3778916" target="_blank"><i class="fas fa-database" title="Data"></i></a> -->
-          </div>
-        </li>
-        <li>P. Deligiannis, T. Vergoulis, <span class="blue">S. Chatzopoulos</span>, C. Tryfonopoulos: <b>Visualising Scientific Topic Evolution.</b> 1<sup>st</sup> International Workshop on Scientific Knowledge: Representation, Discovery and Assessment (Sci-K) @ The Web Conf, Ljubljana, Slovenia, April 2021 (Demo Track)
-          <div class="links">
-<!--             Links:  -->
-<!--                 <a href="http://www.vldb.org/pvldb/vol13/p2913-chatzopoulos.pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a> -->
-<!--                 <a href="http://sphinx.magellan.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a> -->
-<!--               <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a> -->
-<!--               <a href="https://zenodo.org/record/3778916" target="_blank"><i class="fas fa-database" title="Data"></i></a> -->
-          </div>
-        </li>
-        <li><span class="blue">S. Chatzopoulos</span>, T. Vergoulis, P. Deligiannis, D. Skoutas, T. Dalamagas, C. Tryfonopoulos: <b>SciNeM: A Scalable Data Science Tool for Heterogeneous Network Mining.</b> In Proceedings of the 24<sup>th</sup> International Conference on Extending Database Technology (EDBT), Nicosia, Cyprus, March 2021 (Demo Track)
-          <div class="links">
-            Links: 
-<!--             <a href="https://link.springer.com/chapter/10.1007/978-3-030-54956-5_4" target="_blank"><i class="fas fa-file" title="Article"></i></a> -->
-              <a href="https://github.com/schatzopoulos/SciNeM" target="_blank">Code</i></a>
-              <a href="http://scinem.imsi.athenarc.gr" target="_blank">App</i></a>
-<!--               <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/veto-clean.pdf" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a> -->
-<!--               <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/4-TPDL50.mp4" target="_blank"><i class="fas fa-play" title="Presentation"></i></a> -->
-
-          </div>
-        </li>
-        <li><span class="blue">S. Chatzopoulos</span>, K. Patroumpas, A. Zeakis, T. Vergoulis, D. Skoutas: <b>SPHINX: A System for Metapath-based Entity Exploration in Heterogeneous Information Networks.</b> In Proceedings of the 46<sup>th</sup> International Conference on Very Large Data Bases (VLDB), Tokyo, Japan, August 2020 (Demo Track)
-          <div class="links">
-            Links: 
-                <a href="http://www.vldb.org/pvldb/vol13/p2913-chatzopoulos.pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a>
-                <a href="http://sphinx.magellan.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
-<!--               <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a> -->
-<!--               <a href="https://zenodo.org/record/3778916" target="_blank"><i class="fas fa-database" title="Data"></i></a> -->
-          </div>
-        </li>
-        
-        <li><span class="blue">S. Chatzopoulos</span>, T. Vergoulis, I. Kanellos, T. Dalamagas, C. Tryfonopoulos: <b>ArtSim: Improved estimation of current impact for recent articles.</b> In Proceedings of the 1<sup>st</sup> International Workshop on Assessing Impact and Merit in Science @ TPDL, Lyon, France, August 2020
-          <div class="links">
-            Links: 
-            <a href="https://link.springer.com/chapter/10.1007/978-3-030-55814-7_27" target="_blank"><i class="fas fa-file" title="Article"></i></a>
-<!--               <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a> -->
-              <a href="https://zenodo.org/record/3778916" target="_blank"><i class="fas fa-database" title="Data"></i></a>
-              <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/Chatzopoulos-ArtSim.pdf" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
-              <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/3-AIMinScience2.mp4" target="_blank"><i class="fas fa-play" title="Presentation"></i></a>
-          </div>
-        </li>
-        
-        <li>T. Vergoulis, <span class="blue">S. Chatzopoulos</span>, T. Dalamagas, C. Tryfonopoulos: <b>VeTo: Expert Set Expansion in Academia.</b> In Proceedings of the 24<sup>th</sup> International Conference on Theory and Practice of Digital Libraries (TPDL), Lyon, France, August 2020
-          <div class="links">
-            Links: 
-            <a href="https://link.springer.com/chapter/10.1007/978-3-030-54956-5_4" target="_blank"><i class="fas fa-file" title="Article"></i></a>
-              <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a>
-              <a href="https://zenodo.org/record/3739316" target="_blank"><i class="fas fa-database" title="Data"></i></a>
-              <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/veto-clean.pdf" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
-              <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/4-TPDL50.mp4" target="_blank"><i class="fas fa-play" title="Presentation"></i></a>
-
-          </div>
-        </li>
-        
-        <li>T. Vergoulis, <span class="blue">S. Chatzopoulos</span>, I. Kanellos, P. Deligiannis, C. Tryfonopoulos, T. Dalamagas: <b>BIP! Finder: Facilitating scientific literature search by exploiting impact-based ranking.</b> In Proceedings of the 28<sup>th</sup> ACM International Conference on Information and Knowledge Management (CIKM), Beijing, China, November 2019 (Demo Track)
-          <div class="links">
-            Links: 
-            <a href="https://dl.acm.org/ft_gateway.cfm?id=3357850&type=pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a>
-            <a href="https://bip.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
-            <a href="https://doi.org/10.5281/zenodo.3533741" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
-          </div>
-        </li>
-        <li>T. Vergoulis, I. Kanellos, A. Tzerefos, <span class="blue">S. Chatzopoulos</span>, T. Dalamagas, S. Skiadopoulos: <b>A study on the readability of scientific publications.</b> In Proceedings of the 23<sup>rd</sup> International Conference on Theory and Practice of Digital Libraries (TPDL), Oslo, Norway, September 2019
-          <div class="links">
-            Links:
-            <a href="https://link.springer.com/chapter/10.1007/978-3-030-30760-8_12" target="_blank"><i class="fas fa-file" title="Article"></i></a>
-            <a href="https://doi.org/10.5281/zenodo.3403663" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
-            <a href="https://doi.org/10.5281/zenodo.2651010" target="_blank"><i class="fas fa-database" title="Data"></i></a>
-          </div>
-        </li>
-        <li><span class="blue">S. Chatzopoulos</span>, P. Deligiannis, T. Vergoulis, I. Kanellos, C. Tryfonopoulos, T. Dalamagas: <b>SciTo trends: visualising scientific topic trends.</b> In Proceedings of the 23<sup>rd</sup> International Conference on Theory and Practice of Digital Libraries (TPDL), Oslo, Norway, September 2019 (Demo Track)
-          <div class="links">
-            Links:
-            <a href="https://link.springer.com/chapter/10.1007/978-3-030-30760-8_41" target="_blank"><i class="fas fa-file" title="Article"></i></a>
-            <a href="https://scito.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
-            <a href="https://doi.org/10.5281/zenodo.3403734" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
-            <a href="https://doi.org/10.5281/zenodo.3403738" target="_blank"><i class="fas fa-file-image" title="Poster"></i></a>
-          </div>
-        </li>
-        <li>D. Karagkouni, M. Paraskevopoulou, <span class="blue">S. Chatzopoulos</span>, I. S. Vlachos, S. Tastsoglou, I. Kanellos, D. Papadimitriou, I. Kavakiotis, S. Maniou, G. Skoufos, T. Vergoulis, T. Dalamagas, A. Hatzigeorgiou: <b>DIANA-TarBase v8: a decade-long collection of experimentally supported miRNA-gene interactions.</b> Nucleic Acids Research (Database Issue), 2018 Jan 4; 46: D239-D245
-          <div class="links">
-            Links:
-            <a href="https://doi.org/10.1093/nar/gkx1141" target="_blank"><i class="fas fa-file" title="Article"></i></a>
-            <a href="http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
-          </div>
-        </li>
-        <li>I. S. Vlachos, T. Vergoulis, M. Paraskevopoulou, F. Lykokanellos, G. Georgakilas, P. Georgiou, <span class="blue">S. Chatzopoulos</span>, D. Karagkouni, F. Christodoulou, T. Dalamagas, A. Hatzigeorgiou: <b>DIANA-mirExTra v2.0: Uncovering microRNAs and Transcription Factors with crucial roles in NGS expression data.</b> Nucleic Acid Research (Web Server Issue), 2016
-          <div class="links">
-            Links:
-            <a href="https://doi.org/10.1093/nar/gkw455" target="_blank"><i class="fas fa-file" title="Article"></i></a>
-            <a href="https://carolina.imis.athena-innovation.gr/mirextra/" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
-          </div>
-        </li>      
-        <li>G. Theodorou, <span class="blue">S. Chatzopoulos</span>, N. Kranitis, A. Paschalis, D. Gizopoulos: <b>A Software-Based Self-Test Methodology for On-Line Testing of Data TLBs.</b> In Proceedings of the IEEE 17<sup>th</sup> European Test Symposium (ETS), pp. 189, 2012, Annecy, France
-          <div class="links">
-            Links:
-            <a href="/files/ETS_2012_poster.pdf" target="_blank"><i class="fas fa-file-image" title="Poster"></i></a>
-          </div>
-        </li>
-        <li>G. Theodorou, <span class="blue">S. Chatzopoulos</span>, N. Kranitis, A. Paschalis, D. Gizopoulos: <b>On-Line Software-Based Self-Test for Data TLBs.</b> In Proceedings of the 1<sup>st</sup> Workshop on Manufacturable and Dependable Multicore Architectures at Nanoscale (MEDIAN), 2012, pp.65-70, Annecy, France
-          <div class="links">
-            Links:
-            <a href="/files/MEDIAN_workshop_paper.pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a>
-          </div>
-        </li>
-      </ul>
-      <h3>National Venues and more...</h3>
-      <ul style="text-align: justify; list-style-type:none;">
-        <li>T. Vergoulis, I. Kanellos, A. Tzerefos, <span class="blue">S. Chatzopoulos</span>, T. Dalamagas, S. Skiadopoulos: <b>Studying the readability of scientific papers.</b> In Proceedings of the 17<sup>th</sup> Hellenic Data Management Symposium (HDMS), Athens, Greece, July 2019</li>
-        
-        <li>T. Vergoulis, <span class="blue">S. Chatzopoulos</span>, I. Kanellos, A. Tzerefos, , T. Dalamagas: <b>A Comparative Study on the gender representation in the Computer Science academic community.</b> 1<sup>st</sup> Summit on Gender Equality in Computing, Athens, Greece, June 2019
-          <div class="links">
-            Links:
-            <a href="https://doi.org/10.7490/f1000research.1117369.1" target="_blank"><i class="fas fa-file-image" title="Poster"></i></a>
-          </div>
-        </li>
-
-        <li>T. Vergoulis, I. Kanellos, <span class="blue">S. Chatzopoulos</span>, C. Tryfonopoulos, T. Dalamagas, Y. Vassiliou: <b>Pub Finder: Assisting the discovery of qualitative research.</b> In Proceedings of the 16<sup>th</sup> Hellenic Data Management Symposium (HDMS), Larnaca, Cyprus, July 2018</li>
-      </ul>
+<ul style="text-align: justify; list-style-type:none;">
+   <li>T. Vergoulis,  I. Kanellos, C. Atzori, A. Mannocci, <span class="blue">S. Chatzopoulos</span>, S. La Bruzzo, N. Manola, P. Manghi: <b>BIP! DB: A Dataset of Impact Measures for Scientific Publications.</b> 1<sup>st</sup> International Workshop on Scientific Knowledge: Representation, Discovery and Assessment (Sci-K) @ The Web Conf, Ljubljana, Slovenia, April 2021
+      <div class="links">
+        <!--             Links:  -->
+        <!--                 <a href="http://www.vldb.org/pvldb/vol13/p2913-chatzopoulos.pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a> -->
+        <!--                 <a href="http://sphinx.magellan.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a> -->
+        <!--               <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a> -->
+        <!--               <a href="https://zenodo.org/record/3778916" target="_blank"><i class="fas fa-database" title="Data"></i></a> -->
     </div>
-  </div>
+</li>
+<li>P. Deligiannis, T. Vergoulis, <span class="blue">S. Chatzopoulos</span>, C. Tryfonopoulos: <b>Visualising Scientific Topic Evolution.</b> 1<sup>st</sup> International Workshop on Scientific Knowledge: Representation, Discovery and Assessment (Sci-K) @ The Web Conf, Ljubljana, Slovenia, April 2021 (Demo Track)
+  <div class="links">
+    <!--             Links:  -->
+    <!--                 <a href="http://www.vldb.org/pvldb/vol13/p2913-chatzopoulos.pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a> -->
+    <!--                 <a href="http://sphinx.magellan.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a> -->
+    <!--               <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a> -->
+    <!--               <a href="https://zenodo.org/record/3778916" target="_blank"><i class="fas fa-database" title="Data"></i></a> -->
+</div>
+</li>
+<li><span class="blue">S. Chatzopoulos</span>, T. Vergoulis, P. Deligiannis, D. Skoutas, T. Dalamagas, C. Tryfonopoulos: <b>SciNeM: A Scalable Data Science Tool for Heterogeneous Network Mining.</b> In Proceedings of the 24<sup>th</sup> International Conference on Extending Database Technology (EDBT), Nicosia, Cyprus, March 2021 (Demo Track)
+  <div class="links">
+    Links: 
+    <!--             <a href="https://link.springer.com/chapter/10.1007/978-3-030-54956-5_4" target="_blank"><i class="fas fa-file" title="Article"></i></a> -->
+    <a href="https://github.com/schatzopoulos/SciNeM" target="_blank">Code</i></a>
+    <a href="http://scinem.imsi.athenarc.gr" target="_blank">App</i></a>
+    <!--               <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/veto-clean.pdf" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a> -->
+    <!--               <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/4-TPDL50.mp4" target="_blank"><i class="fas fa-play" title="Presentation"></i></a> -->
+
+</div>
+</li>
+<li><span class="blue">S. Chatzopoulos</span>, K. Patroumpas, A. Zeakis, T. Vergoulis, D. Skoutas: <b>SPHINX: A System for Metapath-based Entity Exploration in Heterogeneous Information Networks.</b> In Proceedings of the 46<sup>th</sup> International Conference on Very Large Data Bases (VLDB), Tokyo, Japan, August 2020 (Demo Track)
+  <div class="links">
+    Links: 
+    <a href="http://www.vldb.org/pvldb/vol13/p2913-chatzopoulos.pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a>
+    <a href="http://sphinx.magellan.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
+    <!--               <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a> -->
+    <!--               <a href="https://zenodo.org/record/3778916" target="_blank"><i class="fas fa-database" title="Data"></i></a> -->
+</div>
+</li>
+
+<li><span class="blue">S. Chatzopoulos</span>, T. Vergoulis, I. Kanellos, T. Dalamagas, C. Tryfonopoulos: <b>ArtSim: Improved estimation of current impact for recent articles.</b> In Proceedings of the 1<sup>st</sup> International Workshop on Assessing Impact and Merit in Science @ TPDL, Lyon, France, August 2020
+  <div class="links">
+    Links: 
+    <a href="https://link.springer.com/chapter/10.1007/978-3-030-55814-7_27" target="_blank"><i class="fas fa-file" title="Article"></i></a>
+    <!--               <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a> -->
+    <a href="https://zenodo.org/record/3778916" target="_blank"><i class="fas fa-database" title="Data"></i></a>
+    <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/Chatzopoulos-ArtSim.pdf" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
+    <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/3-AIMinScience2.mp4" target="_blank"><i class="fas fa-play" title="Presentation"></i></a>
+</div>
+</li>
+
+<li>T. Vergoulis, <span class="blue">S. Chatzopoulos</span>, T. Dalamagas, C. Tryfonopoulos: <b>VeTo: Expert Set Expansion in Academia.</b> In Proceedings of the 24<sup>th</sup> International Conference on Theory and Practice of Digital Libraries (TPDL), Lyon, France, August 2020
+  <div class="links">
+    Links: 
+    <a href="https://link.springer.com/chapter/10.1007/978-3-030-54956-5_4" target="_blank"><i class="fas fa-file" title="Article"></i></a>
+    <a href="https://github.com/schatzopoulos/HeySim" target="_blank"><i class="fas fa-code" title="Code"></i></a>
+    <a href="https://zenodo.org/record/3739316" target="_blank"><i class="fas fa-database" title="Data"></i></a>
+    <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/veto-clean.pdf" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
+    <a href="http://eric.univ-lyon2.fr/adbis-tpdl-eda-2020/author-material/4-TPDL50.mp4" target="_blank"><i class="fas fa-play" title="Presentation"></i></a>
+
+</div>
+</li>
+
+<li>T. Vergoulis, <span class="blue">S. Chatzopoulos</span>, I. Kanellos, P. Deligiannis, C. Tryfonopoulos, T. Dalamagas: <b>BIP! Finder: Facilitating scientific literature search by exploiting impact-based ranking.</b> In Proceedings of the 28<sup>th</sup> ACM International Conference on Information and Knowledge Management (CIKM), Beijing, China, November 2019 (Demo Track)
+  <div class="links">
+    Links: 
+    <a href="https://dl.acm.org/ft_gateway.cfm?id=3357850&type=pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a>
+    <a href="https://bip.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
+    <a href="https://doi.org/10.5281/zenodo.3533741" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
+</div>
+</li>
+<li>T. Vergoulis, I. Kanellos, A. Tzerefos, <span class="blue">S. Chatzopoulos</span>, T. Dalamagas, S. Skiadopoulos: <b>A study on the readability of scientific publications.</b> In Proceedings of the 23<sup>rd</sup> International Conference on Theory and Practice of Digital Libraries (TPDL), Oslo, Norway, September 2019
+  <div class="links">
+    Links:
+    <a href="https://link.springer.com/chapter/10.1007/978-3-030-30760-8_12" target="_blank"><i class="fas fa-file" title="Article"></i></a>
+    <a href="https://doi.org/10.5281/zenodo.3403663" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
+    <a href="https://doi.org/10.5281/zenodo.2651010" target="_blank"><i class="fas fa-database" title="Data"></i></a>
+</div>
+</li>
+<li><span class="blue">S. Chatzopoulos</span>, P. Deligiannis, T. Vergoulis, I. Kanellos, C. Tryfonopoulos, T. Dalamagas: <b>SciTo trends: visualising scientific topic trends.</b> In Proceedings of the 23<sup>rd</sup> International Conference on Theory and Practice of Digital Libraries (TPDL), Oslo, Norway, September 2019 (Demo Track)
+  <div class="links">
+    Links:
+    <a href="https://link.springer.com/chapter/10.1007/978-3-030-30760-8_41" target="_blank"><i class="fas fa-file" title="Article"></i></a>
+    <a href="https://scito.imsi.athenarc.gr" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
+    <a href="https://doi.org/10.5281/zenodo.3403734" target="_blank"><i class="fas fa-file-powerpoint" title="Slides"></i></a>
+    <a href="https://doi.org/10.5281/zenodo.3403738" target="_blank"><i class="fas fa-file-image" title="Poster"></i></a>
+</div>
+</li>
+<li>D. Karagkouni, M. Paraskevopoulou, <span class="blue">S. Chatzopoulos</span>, I. S. Vlachos, S. Tastsoglou, I. Kanellos, D. Papadimitriou, I. Kavakiotis, S. Maniou, G. Skoufos, T. Vergoulis, T. Dalamagas, A. Hatzigeorgiou: <b>DIANA-TarBase v8: a decade-long collection of experimentally supported miRNA-gene interactions.</b> Nucleic Acids Research (Database Issue), 2018 Jan 4; 46: D239-D245
+  <div class="links">
+    Links:
+    <a href="https://doi.org/10.1093/nar/gkx1141" target="_blank"><i class="fas fa-file" title="Article"></i></a>
+    <a href="http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
+</div>
+</li>
+<li>I. S. Vlachos, T. Vergoulis, M. Paraskevopoulou, F. Lykokanellos, G. Georgakilas, P. Georgiou, <span class="blue">S. Chatzopoulos</span>, D. Karagkouni, F. Christodoulou, T. Dalamagas, A. Hatzigeorgiou: <b>DIANA-mirExTra v2.0: Uncovering microRNAs and Transcription Factors with crucial roles in NGS expression data.</b> Nucleic Acid Research (Web Server Issue), 2016
+  <div class="links">
+    Links:
+    <a href="https://doi.org/10.1093/nar/gkw455" target="_blank"><i class="fas fa-file" title="Article"></i></a>
+    <a href="https://carolina.imis.athena-innovation.gr/mirextra/" target="_blank"><i class="fas fa-external-link-square-alt" title="Application"></i></a>
+</div>
+</li>      
+<li>G. Theodorou, <span class="blue">S. Chatzopoulos</span>, N. Kranitis, A. Paschalis, D. Gizopoulos: <b>A Software-Based Self-Test Methodology for On-Line Testing of Data TLBs.</b> In Proceedings of the IEEE 17<sup>th</sup> European Test Symposium (ETS), pp. 189, 2012, Annecy, France
+  <div class="links">
+    Links:
+    <a href="/files/ETS_2012_poster.pdf" target="_blank"><i class="fas fa-file-image" title="Poster"></i></a>
+</div>
+</li>
+<li>G. Theodorou, <span class="blue">S. Chatzopoulos</span>, N. Kranitis, A. Paschalis, D. Gizopoulos: <b>On-Line Software-Based Self-Test for Data TLBs.</b> In Proceedings of the 1<sup>st</sup> Workshop on Manufacturable and Dependable Multicore Architectures at Nanoscale (MEDIAN), 2012, pp.65-70, Annecy, France
+  <div class="links">
+    Links:
+    <a href="/files/MEDIAN_workshop_paper.pdf" target="_blank"><i class="fas fa-file" title="Article"></i></a>
+</div>
+</li>
+</ul>
+<h3>National Venues and more...</h3>
+<ul style="text-align: justify; list-style-type:none;">
+    <li>T. Vergoulis, I. Kanellos, A. Tzerefos, <span class="blue">S. Chatzopoulos</span>, T. Dalamagas, S. Skiadopoulos: <b>Studying the readability of scientific papers.</b> In Proceedings of the 17<sup>th</sup> Hellenic Data Management Symposium (HDMS), Athens, Greece, July 2019</li>
+
+    <li>T. Vergoulis, <span class="blue">S. Chatzopoulos</span>, I. Kanellos, A. Tzerefos, , T. Dalamagas: <b>A Comparative Study on the gender representation in the Computer Science academic community.</b> 1<sup>st</sup> Summit on Gender Equality in Computing, Athens, Greece, June 2019
+      <div class="links">
+        Links:
+        <a href="https://doi.org/10.7490/f1000research.1117369.1" target="_blank"><i class="fas fa-file-image" title="Poster"></i></a>
+    </div>
+</li>
+
+<li>T. Vergoulis, I. Kanellos, <span class="blue">S. Chatzopoulos</span>, C. Tryfonopoulos, T. Dalamagas, Y. Vassiliou: <b>Pub Finder: Assisting the discovery of qualitative research.</b> In Proceedings of the 16<sup>th</sup> Hellenic Data Management Symposium (HDMS), Larnaca, Cyprus, July 2018</li>
+</ul>
+</div>
+</div>
 </section>
 
 <footer class="site-footer">
   <div class="container">
     <p class="txt-medium-gray">
       <small>&copy;2019 All rights reserved. Made with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and ♥</small>
-    </p>
-  </div>
+  </p>
+</div>
 </footer></div>
-  
 
 
 
-  <a href="https://github.com/schatzopoulos" target="_blank" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#337ab7; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<a href="https://github.com/schatzopoulos" target="_blank" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#337ab7; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 </body>
 </html>
