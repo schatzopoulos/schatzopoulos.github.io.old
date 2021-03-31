@@ -1,6 +1,6 @@
-- title: "BIP! DB: A Dataset of Impact Measures for Scientific Publications"
-  authors: "T. Vergoulis,  I. Kanellos, C. Atzori, A. Mannocci, <span class="blue">S. Chatzopoulos</span>, S. La Bruzzo, N. Manola, P. Manghi"
-  venue: "1<sup>st</sup> International Workshop on Scientific Knowledge: Representation, Discovery and Assessment (Sci-K) @ The Web Conf, Ljubljana, Slovenia, April 2021"
+- title:    BIP! DB: A Dataset of Impact Measures for Scientific Publications
+  authors:  T. Vergoulis,  I. Kanellos, C. Atzori, A. Mannocci, S. Chatzopoulos, S. La Bruzzo, N. Manola, P. Manghi
+  venue:    1st International Workshop on Scientific Knowledge: Representation, Discovery and Assessment (Sci-K) @ The Web Conf, Ljubljana, Slovenia, April 2021
   link:
   video:
   slides:
